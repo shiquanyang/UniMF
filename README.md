@@ -42,8 +42,7 @@ Each frame consists of the following fields:
 
 
 ## UniMF Architecture
-![architecture](img/main_framework.png)
-
+<img src="img/main_framework.png" width="50%">
 
 # Experimental Results
 ![main_results](img/main_results.png)
