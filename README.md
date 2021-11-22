@@ -12,10 +12,9 @@ Download the dataset [here](https://github.com/shiquanyang/UniMF)
 * turns: A list of system or user utterances.
   
   Each turn consists of the following fields:
-
-    * speaker: The speaker for the turn. Possible values are "USER" or "SYSTEM".
-    * utterance: A string containing the natural language utterance.
-    * frames: A list of frames, where each frame contains annotations for a single service.
+  * speaker: The speaker for the turn. Possible values are "USER" or "SYSTEM".
+  * utterance: A string containing the natural language utterance.
+  * frames: A list of frames, where each frame contains annotations for a single service.
   
   Each frame consists of the following fields:
 
