@@ -49,7 +49,7 @@ Each frame consists of the following fields:
 
 |||
 |--|--|
-| <img src="img/ablation_study.png" width="300"/> | <img src="img/human_evaluation.png" width="300"/> |
+| <img src="img/ablation_study.png" width="400"/> | <img src="img/human_evaluation.png" width="400"/> |
 
 
 ## Citation
