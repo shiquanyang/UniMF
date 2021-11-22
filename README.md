@@ -6,24 +6,23 @@
 Download the dataset [here](https://github.com/shiquanyang/UniMF)
 
 ### Notes on the data format in the benchmark
-  Our dataset is organized in a format similar to the SGD dataset *SGD [Rastogi et al., 2020]*. Each dialogue is represented as a json object with the following fields:
+Our dataset is organized in a format similar to the SGD dataset *SGD [Rastogi et al., 2020]*. Each dialogue is represented as a json object with the following fields:
 * dialogue_id: A unique identifier for a dialogue.
 * services: service presented in the dialogue.
 * turns: A list of system or user utterances.
   
-  Each turn consists of the following fields:
-  * speaker: The speaker for the turn. Possible values are "USER" or "SYSTEM".
-  * utterance: A string containing the natural language utterance.
-  * frames: A list of frames, where each frame contains annotations for a single service.
+Each turn consists of the following fields:
+* speaker: The speaker for the turn. Possible values are "USER" or "SYSTEM".
+* utterance: A string containing the natural language utterance.
+* frames: A list of frames, where each frame contains annotations for a single service.
   
-  Each frame consists of the following fields:
-
-    * service: The name of the service corresponding to the frame.
-    * slots (optional): A list of slot spans in the utterance.
-    * actions (optional): A list of actions corresponding to the system.
-    * service_call (system turns only, optional): The request sent to the service.
-    * service_results (system turns only, optional): A list of entities containing the results obtained from the service. It is only available for turns in which a service call is made. Each entity is represented as a dictionary mapping a slot name to a string containing its canonical value.
-    * state (user turns only, optional): The dialogue state corresponding to the service.
+Each frame consists of the following fields:
+* service: The name of the service corresponding to the frame.
+* slots (optional): A list of slot spans in the utterance.
+* actions (optional): A list of actions corresponding to the system.
+* service_call (system turns only, optional): The request sent to the service.
+* service_results (system turns only, optional): A list of entities containing the results obtained from the service. It is only available for turns in which a service call is made. Each entity is represented as a dictionary mapping a slot name to a string containing its canonical value.
+* state (user turns only, optional): The dialogue state corresponding to the service.
 
 ## What are in this Repository
 This repository contains the following contents:
