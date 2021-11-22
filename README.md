@@ -4,7 +4,21 @@
 ![multimodal](img/multimodal_dialogues.png)
 
 
-### Notes on the data format in the benchmark
+## What are in this Repository
+This repository contains the following contents:
+```
+/
+├── MMDialKB/                 --> (The benchmark datasets folder)
+|   ├── train/                --> (The train split. It contains all the training dialogues of MMDialKB)
+|   ├── dev/                  --> (The development split. It contains all the development dialogues of MMDialKB)
+|   ├── test/                 --> (The test split. It contains all the test dialogues of MMDialKB)
+|   ├── images/               --> (The image resources. It contains all the images used in MMDialKB)
+|   ├── database.json         --> (The database information. It contains all the KB entries used in MMDialKB)
+├── LICENCE                   --> (The licence file)
+└── README.md                 --> (The readme file)
+```
+
+## Notes on the data format in the benchmark
 Our dataset is organized in a format similar to the SGD dataset *SGD [Rastogi et al., 2020]*. Each dialogue is represented as a json object with the following fields:
 * dialogue_id: A unique identifier for a dialogue.
 * services: service presented in the dialogue.
@@ -23,19 +37,6 @@ Each frame consists of the following fields:
 * service_results (system turns only, optional): A list of entities containing the results obtained from the service. It is only available for turns in which a service call is made. Each entity is represented as a dictionary mapping a slot name to a string containing its canonical value.
 * state (user turns only, optional): The dialogue state corresponding to the service.
 
-## What are in this Repository
-This repository contains the following contents:
-```
-/
-├── MMDialKB/                 --> (The benchmark datasets folder)
-|   ├── train/                --> (The train split. It contains all the training dialogues of MMDialKB)
-|   ├── dev/                  --> (The development split. It contains all the development dialogues of MMDialKB)
-|   ├── test/                 --> (The test split. It contains all the test dialogues of MMDialKB)
-|   ├── images/               --> (The image resources. It contains all the images used in MMDialKB)
-|   ├── database.json         --> (The database information. It contains all the KB entries used in MMDialKB)
-├── LICENCE                   --> (The licence file)
-└── README.md                 --> (The readme file)
-```
 
 ## Citation
 If you use the datasets in the MMDialKB Benchmark, please credit us by citing the following papers:
