@@ -7,10 +7,9 @@ Download the dataset [here](https://github.com/shiquanyang/UniMF)
 
 ### Notes on the data format in the benchmark
   Our dataset is organized in a format similar to the SGD dataset *SGD [Rastogi et al., 2020]*. Each dialogue is represented as a json object with the following fields:
-
-    * dialogue_id: A unique identifier for a dialogue.
-    * services: service presented in the dialogue.
-    * turns: A list of system or user utterances.
+* dialogue_id: A unique identifier for a dialogue.
+* services: service presented in the dialogue.
+* turns: A list of system or user utterances.
   
   Each turn consists of the following fields:
 
