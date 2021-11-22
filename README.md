@@ -1,5 +1,5 @@
 ## MMDialKB Benchmark
-**MMDialKB** is a benchmark for task-oriented dialogues with multimodal knowledge bases (KBs), i.e., textual and visual knowledge in this paper. This benchmark consists of three parts: dialogue utterances, images and knowledge base. The dialogue utterances are collected through Amazon Mechanical Turk where two workers (one plays the role of user and one plays the role of system) are matched to perform dialogues based on the textual and visual information from the KBs for restaurant reservation. For the knowledge base, it contains not only textual but also visual information about KB entities. The textual part is a subset (i.e., the restaurant domain) of *MultiWOZ [Budzianowski et al., 2018]*. We expand it by adding images for every KB entry (i.e., each restaurant) to support dialogues upon multimodal information. All the images are crawled from mainstream image search engines (i.e., Google image search, Microsoft Bing image search). To ensure the quality of the collected images, we manually clean all the images by filtering the low-resolution images, images with watermarks, and incomplete images. More about this benchmark such as the background and how it is generated are described in [*[Shiquan Yang, Rui Zhang, Sarah Erfani, and Jey Han Lau. "UniMF: A Unified Framework to Incorporate Multimodal Knowledge Bases into End-to-End Task-Oriented Dialogue Systems". IJCAI (2021)]*](https://www.ijcai.org/proceedings/2021/0548.pdf).
+**MMDialKB** is a benchmark for task-oriented dialogues with multimodal knowledge bases (KBs), i.e., textual and visual knowledge in this paper. This benchmark consists of three parts: dialogue utterances, images and knowledge base. The dialogue utterances are collected through Amazon Mechanical Turk where two workers (one plays the role of user and one plays the role of system) are matched to perform dialogues based on the textual and visual information from the KBs for restaurant reservation. For the knowledge base, it contains not only textual but also visual information about KB entities. The textual part is a subset (i.e., the restaurant domain) of *MultiWOZ [Budzianowski et al., 2018]*. We expand it by adding images for every KB entry (i.e., each restaurant) to support multimodal dialogues. All the images are crawled from mainstream image search engines (i.e., Google image search, Microsoft Bing image search). To ensure the quality of the collected images, we manually clean them by filtering the low-resolution images, images with watermarks, and incomplete images. More about this benchmark such as the background and how it is generated are described in [*[Shiquan Yang, Rui Zhang, Sarah Erfani, and Jey Han Lau. "UniMF: A Unified Framework to Incorporate Multimodal Knowledge Bases into End-to-End Task-Oriented Dialogue Systems". IJCAI (2021)]*](https://www.ijcai.org/proceedings/2021/0548.pdf).
 
 ![multimodal](img/multimodal_dialogues.png)
 
@@ -7,14 +7,19 @@ Download the dataset [here](https://github.com/shiquanyang/UniMF)
 
 ### Notes on the data format in the benchmark
   Our dataset is organized in a format similar to the SGD dataset *SGD [Rastogi et al., 2020]*. Each dialogue is represented as a json object with the following fields:
+
     * dialogue_id: A unique identifier for a dialogue.
     * services: service presented in the dialogue.
     * turns: A list of system or user utterances.
+  
   Each turn consists of the following fields:
+
     * speaker: The speaker for the turn. Possible values are "USER" or "SYSTEM".
     * utterance: A string containing the natural language utterance.
     * frames: A list of frames, where each frame contains annotations for a single service.
+  
   Each frame consists of the following fields:
+
     * service: The name of the service corresponding to the frame.
     * slots (optional): A list of slot spans in the utterance.
     * actions (optional): A list of actions corresponding to the system.
