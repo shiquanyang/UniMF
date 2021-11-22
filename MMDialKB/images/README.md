@@ -1,4 +1,4 @@
-## Images Repository
+## Images for Multimodal Knowledge Base
 ### Download the images using the following link (the two links contain the same image files, just choosing one according to your prefernece):
 
 1. Google Drive: 
