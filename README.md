@@ -47,10 +47,9 @@ Each frame consists of the following fields:
 ## Experimental Results
 <img src="img/main_results.png" width="100%">
 
-<center class="half">
-    <img src="img/ablation_study.png" width="300"/>
-    <img src="img/human_evaluation.png" width="300"/>
-</center>
+|||
+|--|--|
+| <img src="img/ablation_study.png" width="300"/> | <img src="img/human_evaluation.png" width="300"/> |
 
 
 ## Citation
