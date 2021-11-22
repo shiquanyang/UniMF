@@ -42,12 +42,12 @@ Each frame consists of the following fields:
 
 
 ## UniMF Architecture
-<img src="img/main_framework.png" width="200%">
+<img src="img/framework.png" width="200%">
 
 # Experimental Results
-![main_results](img/main_results.png)
-![ablations](img/ablation_study.png)
-![human_evaluations](img/human_evaluation.png)
+<img src="img/main_results.png" width="100%">
+<img src="img/ablation_study.png" width="100%">
+<img src="img/human_evaluation" width="100%">
 
 
 ## Citation
