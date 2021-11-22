@@ -1,4 +1,4 @@
-## MMDialKB Benchmark
+## Images Repository
 Download the images using the following link (the two links contain the same image files, just choosing one according to your prefernece):
 
 ### Google Drive: 
