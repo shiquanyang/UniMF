@@ -37,6 +37,19 @@ Each frame consists of the following fields:
 * service_results (system turns only, optional): A list of entities containing the results obtained from the service. It is only available for turns in which a service call is made. Each entity is represented as a dictionary mapping a slot name to a string containing its canonical value.
 * state (user turns only, optional): The dialogue state corresponding to the service.
 
+## Dataset Statistics
+![dataset_statistics](img/dataset_statistics.png)
+
+
+## UniMF Architecture
+![architecture](img/framework.png)
+
+
+# Experimental Results
+![main_results](img/main_results.png)
+![ablations](img/ablation_study.png)
+![human_evaluations](img/human_evaluation.png)
+
 
 ## Citation
 If you use the datasets in the MMDialKB Benchmark, please credit us by citing the following papers:
