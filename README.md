@@ -47,6 +47,10 @@ Each frame consists of the following fields:
 ## Experimental Results
 <img src="img/main_results.png" width="100%">
 
+<div align="center">
+<img src="img/ablation_study.png" width="450"/><img src="img/human_evaluation.png" width="450"/>
+</div>
+
 |||
 |--|--|
 | <img src="img/ablation_study.png" width="450"/> | <img src="img/human_evaluation.png" width="450"/> |
