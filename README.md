@@ -38,7 +38,7 @@ Each frame consists of the following fields:
 * state (user turns only, optional): The dialogue state corresponding to the service.
 
 ## Dataset Statistics
-![dataset_statistics](img/dataset_statistics.png)
+![dataset_statistics](img/data_statistics.png)
 
 
 ## UniMF Architecture
