@@ -3,7 +3,6 @@
 
 ![multimodal](img/multimodal_dialogues.png)
 
-### Download the dataset [here](https://github.com/shiquanyang/UniMF)
 
 ### Notes on the data format in the benchmark
 Our dataset is organized in a format similar to the SGD dataset *SGD [Rastogi et al., 2020]*. Each dialogue is represented as a json object with the following fields:
